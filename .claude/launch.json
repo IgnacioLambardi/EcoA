@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portal",
+      "runtimeExecutable": "C:\\Program Files\\Python311\\python.exe",
+      "runtimeArgs": ["-m", "http.server", "3500"],
+      "port": 3500
+    }
+  ]
+}
