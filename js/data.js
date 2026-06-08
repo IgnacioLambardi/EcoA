@@ -16,6 +16,8 @@ const DEFAULT_DATA = {
 };
 
 function loadDB() {
+  const hasExported = typeof EXPORTED_DATA !== 'undefined' && EXPORTED_DATA !== null;
+
   try {
     const raw = localStorage.getItem(DB_KEY);
     if (raw) {
@@ -23,23 +25,30 @@ function loadDB() {
       if (!parsed.zoneMatches) parsed.zoneMatches = [];
       if (parsed.standings) delete parsed.standings;
 
-      // Si hay datos exportados más nuevos (publicación reciente), los usamos
-      // comparando cantidad total de registros como heurística simple
-      if (typeof EXPORTED_DATA !== 'undefined' && EXPORTED_DATA !== null) {
-        const expVer = (EXPORTED_DATA._version || 0);
-        const lcVer  = (parsed._version || 0);
+      // Si los datos locales parecen vacíos y hay datos publicados, preferir publicados
+      const lcEmpty = !parsed.players?.length && !parsed.matches?.length;
+      if (hasExported && lcEmpty) {
+        localStorage.setItem(DB_KEY, JSON.stringify(EXPORTED_DATA));
+        return structuredClone(EXPORTED_DATA);
+      }
+
+      // Si la versión publicada es más nueva, actualizar
+      if (hasExported) {
+        const expVer = EXPORTED_DATA._version || 0;
+        const lcVer  = parsed._version || 0;
         if (expVer > lcVer) {
-          // Nueva publicación: actualizar localStorage con los datos publicados
           localStorage.setItem(DB_KEY, JSON.stringify(EXPORTED_DATA));
           return structuredClone(EXPORTED_DATA);
         }
       }
+
       return parsed;
     }
   } catch { /* fall through */ }
 
-  // localStorage vacío: si hay datos exportados, los usamos como semilla
-  if (typeof EXPORTED_DATA !== 'undefined' && EXPORTED_DATA !== null) {
+  // localStorage vacío → seedear desde EXPORTED_DATA
+  if (hasExported) {
+    localStorage.setItem(DB_KEY, JSON.stringify(EXPORTED_DATA));
     return structuredClone(EXPORTED_DATA);
   }
   return structuredClone(DEFAULT_DATA);
