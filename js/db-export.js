@@ -1,6 +1,6 @@
 // Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
-// Última publicación: 8/6/2026, 14:00:00
+// Última publicación: 8/6/2026, 07:42:01
 const EXPORTED_DATA = {
   "players": [
     {
@@ -176,8 +176,8 @@ const EXPORTED_DATA = {
         },
         {
           "minute": 45,
-          "inId": "mq4d5ipkpl4w",
-          "outId": "mq4ds2kck5fg"
+          "inId": "mq4ds2kck5fg",
+          "outId": "mq4d5ipkpl4w"
         },
         {
           "minute": 55,
@@ -188,6 +188,11 @@ const EXPORTED_DATA = {
           "minute": 65,
           "inId": "mq4d35dkhngo",
           "outId": "mq4d1my0bwbv"
+        },
+        {
+          "minute": 75,
+          "inId": "mq4d5ipkpl4w",
+          "outId": "mq4d67nkomki"
         }
       ]
     }
@@ -262,5 +267,5 @@ const EXPORTED_DATA = {
       "goalsAway": 0
     }
   ],
-  "_version": 1749398000000
+  "_version": 1780958521044
 };
