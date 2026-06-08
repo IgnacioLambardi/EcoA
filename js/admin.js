@@ -2,7 +2,7 @@
 //  ADMIN PANEL – admin.js
 // =============================================
 
-const ADMIN_PASS = 'ecoa2026';
+const ADMIN_PASS = 'AdminEco';
 
 // ---- AUTH ----
 function checkAuth() {
