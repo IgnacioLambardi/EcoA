@@ -16,26 +16,36 @@ const DEFAULT_DATA = {
 };
 
 function loadDB() {
-  // Si hay datos exportados (sitio publicado en GitHub), los usa como fuente de verdad
+  try {
+    const raw = localStorage.getItem(DB_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (!parsed.zoneMatches) parsed.zoneMatches = [];
+      if (parsed.standings) delete parsed.standings;
+
+      // Si hay datos exportados más nuevos (publicación reciente), los usamos
+      // comparando cantidad total de registros como heurística simple
+      if (typeof EXPORTED_DATA !== 'undefined' && EXPORTED_DATA !== null) {
+        const expVer = (EXPORTED_DATA._version || 0);
+        const lcVer  = (parsed._version || 0);
+        if (expVer > lcVer) {
+          // Nueva publicación: actualizar localStorage con los datos publicados
+          localStorage.setItem(DB_KEY, JSON.stringify(EXPORTED_DATA));
+          return structuredClone(EXPORTED_DATA);
+        }
+      }
+      return parsed;
+    }
+  } catch { /* fall through */ }
+
+  // localStorage vacío: si hay datos exportados, los usamos como semilla
   if (typeof EXPORTED_DATA !== 'undefined' && EXPORTED_DATA !== null) {
     return structuredClone(EXPORTED_DATA);
   }
-  try {
-    const raw = localStorage.getItem(DB_KEY);
-    if (!raw) return structuredClone(DEFAULT_DATA);
-    const parsed = JSON.parse(raw);
-    if (!parsed.zoneMatches) parsed.zoneMatches = [];
-    // Migrate: drop old manual standings if present
-    if (parsed.standings) delete parsed.standings;
-    return parsed;
-  } catch {
-    return structuredClone(DEFAULT_DATA);
-  }
+  return structuredClone(DEFAULT_DATA);
 }
 
 function saveDB(data) {
-  // Solo guarda en localStorage si no estamos en modo publicado
-  if (typeof EXPORTED_DATA !== 'undefined' && EXPORTED_DATA !== null) return;
   localStorage.setItem(DB_KEY, JSON.stringify(data));
 }
 

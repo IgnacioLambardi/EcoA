@@ -31,6 +31,7 @@ function logout() {
 
 function publicarPortal() {
   const db = loadDB();
+  db._version = Date.now(); // marca de tiempo → permite detectar publicación más nueva
   const contenido = `// Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
 // Última publicación: ${new Date().toLocaleString('es-AR')}
@@ -51,7 +52,29 @@ const EXPORTED_DATA = ${JSON.stringify(db, null, 2)};
 function showAdmin() {
   document.getElementById('login-screen').style.display = 'none';
   document.getElementById('admin-panel').style.display = 'block';
+  // Si no hay datos en localStorage todavía, seedear desde EXPORTED_DATA
+  _ensureLocalDB();
   initAdmin();
+}
+
+function _ensureLocalDB() {
+  try {
+    const raw = localStorage.getItem(DB_KEY);
+    if (!raw && typeof EXPORTED_DATA !== 'undefined' && EXPORTED_DATA !== null) {
+      localStorage.setItem(DB_KEY, JSON.stringify(EXPORTED_DATA));
+    }
+  } catch {}
+}
+
+function resetLocalDB() {
+  if (!confirm('¿Resetear datos locales y cargar la última versión publicada?\n\nPerdés los cambios no publicados.')) return;
+  if (typeof EXPORTED_DATA !== 'undefined' && EXPORTED_DATA !== null) {
+    localStorage.setItem(DB_KEY, JSON.stringify(EXPORTED_DATA));
+    alert('✅ Datos reseteados. Recargando...');
+    location.reload();
+  } else {
+    alert('No hay datos publicados para cargar.');
+  }
 }
 
 // ---- INIT ----

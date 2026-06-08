@@ -259,7 +259,8 @@
       <span>Panel de gestión del portal</span>
     </div>
     <a href="../index.html">← Ver portal</a>
-    <button onclick="publicarPortal()" style="margin-left:auto;padding:8px 18px;background:var(--gold);color:var(--blue);border:none;border-radius:8px;font-weight:800;font-size:13px;cursor:pointer">📤 Publicar</button>
+    <button onclick="resetLocalDB()" style="margin-left:auto;padding:8px 14px;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:8px;font-weight:600;font-size:12px;cursor:pointer" title="Cargar la última versión publicada (descarta cambios locales no publicados)">🔄 Resetear</button>
+    <button onclick="publicarPortal()" style="margin-left:8px;padding:8px 18px;background:var(--gold);color:var(--blue);border:none;border-radius:8px;font-weight:800;font-size:13px;cursor:pointer">📤 Publicar</button>
     <a href="#" onclick="logout()" style="margin-left:12px">Salir</a>
   </div>
 

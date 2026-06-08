@@ -845,5 +845,7 @@ footer {
   .hero h1 { font-size: 22px; }
 
   .match-item { flex-wrap: wrap; }
-  .match-teams { order: -1; width: 100%; }
+  .match-teams { order: -1; width: 100%; font-size: 13px; gap: 8px; }
+  .match-score { font-size: 17px; padding: 5px 10px; min-width: 52px; }
+  .match-teams span { min-width: 0; text-align: center; }
 }
