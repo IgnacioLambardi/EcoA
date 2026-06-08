@@ -1,6 +1,6 @@
 // Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
-// Última publicación: 7/6/2026, 10:46:55
+// Última publicación: 8/6/2026, 12:06:55
 const EXPORTED_DATA = {
   "players": [
     {
