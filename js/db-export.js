@@ -1,6 +1,6 @@
 // Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
-// Última publicación: 8/6/2026, 12:09:20
+// Última publicación: 8/6/2026, 14:00:00
 const EXPORTED_DATA = {
   "players": [
     {
@@ -214,6 +214,19 @@ const EXPORTED_DATA = {
       "goalsHome": 0,
       "goalsAway": 0,
       "noShowTeam": "home"
+    },
+    {
+      "id": "mq5zona1fecha1a",
+      "zona": "zona1",
+      "jornada": 1,
+      "homeTeam": "Exactas B",
+      "awayTeam": "Veterinarias",
+      "status": "no_show",
+      "played": false,
+      "goalsHome": 0,
+      "goalsAway": 0,
+      "noShowTeam": "away"
     }
-  ]
+  ],
+  "_version": 1749391200000
 };
