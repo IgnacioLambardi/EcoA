@@ -226,7 +226,19 @@ const EXPORTED_DATA = {
       "goalsHome": 0,
       "goalsAway": 0,
       "noShowTeam": "away"
+    },
+    {
+      "id": "mq5zona1fecha1b",
+      "zona": "zona1",
+      "jornada": 1,
+      "homeTeam": "FADU A",
+      "awayTeam": "Agronomía",
+      "status": "no_show",
+      "played": false,
+      "goalsHome": 0,
+      "goalsAway": 0,
+      "noShowTeam": "home"
     }
   ],
-  "_version": 1749391200000
+  "_version": 1749395000000
 };
