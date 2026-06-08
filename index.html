@@ -193,7 +193,7 @@
       <a href="#" data-section="home">🏠 Inicio</a>
       <a href="#" data-section="matches">📅 Partidos</a>
       <a href="#" data-section="stats">⚽ Estadísticas</a>
-      <a href="#" data-section="profile">👤 Mi Perfil</a><a href="#" data-section="standings">📊 Tabla</a>
+      <a href="#" data-section="standings">📊 Tabla</a>
     </nav>
   </div>
 </header>
@@ -367,10 +367,6 @@
   </div>
 
 
-  <!-- PERFIL -->
-  <div class="section" id="sec-profile">
-    <div id="profile-content"></div>
-  </div>
 </main>
 
 <!-- ===== MODAL PARTIDOS ===== -->
@@ -378,45 +374,11 @@
   <div class="modal" id="match-modal"></div>
 </div>
 
-<!-- ===== MODAL EDITAR NOMBRE ===== -->
-<div class="modal-overlay" id="name-modal-overlay">
-  <div class="modal" id="name-modal" style="max-width:420px">
-    <div class="modal-header">
-      <h3 style="color:var(--gold)">✏️ Editar mi nombre</h3>
-      <button class="modal-close" onclick="closeNameModal()">✕</button>
-    </div>
-    <div class="modal-body">
-      <p style="font-size:13px;color:var(--muted);margin-bottom:16px">
-        Tocá tu nombre para editarlo.
-      </p>
-      <div id="name-player-list" style="display:flex;flex-direction:column;gap:8px"></div>
-
-      <!-- Form oculto que aparece al elegir jugador -->
-      <div id="name-edit-form" style="display:none;margin-top:16px;padding-top:16px;border-top:1px solid var(--border)">
-        <label style="font-size:13px;font-weight:600;color:var(--blue)">Tu nombre completo</label>
-        <input id="name-edit-input" type="text" placeholder="Nombre y apellido"
-          style="width:100%;margin-top:8px;padding:10px 12px;border:2px solid var(--border);border-radius:8px;font-size:15px;outline:none"
-          onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
-        <div style="display:flex;gap:10px;margin-top:12px">
-          <button onclick="savePlayerName()"
-            style="flex:1;padding:10px;background:var(--blue);color:var(--gold);border:none;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer">
-            💾 Guardar
-          </button>
-          <button onclick="cancelEditName()"
-            style="padding:10px 16px;background:var(--border);color:var(--muted);border:none;border-radius:8px;font-size:14px;cursor:pointer">
-            Cancelar
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- ===== FOOTER ===== -->
 <footer>
   <strong style="color:var(--blue)">Económicas A</strong> · FCE UBA · Fútbol 11 · Torneo Interfacultades 2026
   <div style="margin-top:12px;display:flex;justify-content:center;gap:20px">
-    <a onclick="openNameModal()" style="font-size:11px;color:var(--muted);text-decoration:none;opacity:0.5;cursor:pointer" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.5">✏️ Editar mi nombre</a>
     <a href="admin/index.html" style="font-size:11px;color:var(--muted);text-decoration:none;opacity:0.5" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.5">⚙ Admin</a>
   </div>
 </footer>

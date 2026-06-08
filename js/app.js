@@ -423,8 +423,8 @@ function monthShort(d) {
   return d.toLocaleDateString('es-AR', { month: 'short' });
 }
 
-// ---- MI PERFIL ----
-function renderProfile() {
+// ---- INIT ----
+function _removedProfile() {
   const myId = getMyPlayerId();
   const container = document.getElementById('profile-content');
   if (!container) return;
@@ -648,18 +648,9 @@ document.addEventListener('DOMContentLoaded', () => {
   renderScorers();
   renderAssists();
   renderStandings();
-  renderProfile();
 
   document.getElementById('modal-overlay').addEventListener('click', e => {
     if (e.target === document.getElementById('modal-overlay')) closeModal();
-  });
-
-  document.getElementById('name-modal-overlay').addEventListener('click', e => {
-    if (e.target === document.getElementById('name-modal-overlay')) closeNameModal();
-  });
-
-  document.getElementById('name-edit-input')?.addEventListener('keydown', e => {
-    if (e.key === 'Enter') savePlayerName();
   });
 
   document.querySelectorAll('.tab-btn[data-zona]').forEach(b => {
