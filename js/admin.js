@@ -591,6 +591,7 @@ function renderStandingsPanel(zona) {
     { v:'no_show',   label:'🚫 No se presentó (W.O.)' },
     { v:'suspended', label:'⛔ Suspendido' },
     { v:'postponed', label:'📅 Pospuesto' },
+    { v:'libre',     label:'🗓️ Fecha libre' },
   ].map(o => `<option value="${o.v}" ${emStatus === o.v ? 'selected' : ''}>${o.label}</option>`).join('');
 
   const noShowOpts = `
@@ -672,13 +673,16 @@ function renderStandingsPanel(zona) {
           no_show:   `<span style="color:#dc2626;font-size:12px;font-weight:600">W.O. — no se presentó: ${m.noShowTeam === 'home' ? m.homeTeam : m.awayTeam}</span>`,
           suspended: `<span style="color:#d97706;font-size:12px;font-weight:600">⛔ Suspendido</span>`,
           postponed: `<span style="color:#6366f1;font-size:12px;font-weight:600">📅 Pospuesto</span>`,
+          libre:     `<span style="color:#059669;font-size:12px;font-weight:600">🗓️ Fecha libre</span>`,
           pending:   `<span style="color:var(--muted);font-size:12px">Pendiente</span>`,
         }[st] || `<span style="color:var(--muted);font-size:12px">Pendiente</span>`;
-        const score = statusBadge;
+        const teamLabel = st === 'libre'
+          ? `<strong>${m.homeTeam}</strong> <span style="color:var(--muted);font-size:12px">— libre</span>`
+          : `${m.homeTeam} <span style="color:var(--muted);margin:0 4px">vs</span> ${m.awayTeam}`;
         matchListHTML += `
           <div style="display:flex;align-items:center;gap:12px;padding:8px 12px;background:#f9fafb;border:1px solid var(--border);border-radius:8px;margin-bottom:6px;flex-wrap:wrap">
             <span style="flex:1;min-width:160px;font-size:14px">
-              ${m.homeTeam} <span style="color:var(--muted);margin:0 4px">vs</span> ${m.awayTeam}
+              ${teamLabel}
             </span>
             <span style="min-width:70px;text-align:center">${score}</span>
             <div style="display:flex;gap:6px;flex-shrink:0">

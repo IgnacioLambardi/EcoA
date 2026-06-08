@@ -238,7 +238,29 @@ const EXPORTED_DATA = {
       "goalsHome": 0,
       "goalsAway": 0,
       "noShowTeam": "home"
+    },
+    {
+      "id": "mq5zona1fecha1c",
+      "zona": "zona1",
+      "jornada": 1,
+      "homeTeam": "Ingeniería",
+      "awayTeam": "",
+      "status": "libre",
+      "played": false,
+      "goalsHome": 0,
+      "goalsAway": 0
+    },
+    {
+      "id": "mq5zona2fecha1a",
+      "zona": "zona2",
+      "jornada": 1,
+      "homeTeam": "FADU B",
+      "awayTeam": "",
+      "status": "libre",
+      "played": false,
+      "goalsHome": 0,
+      "goalsAway": 0
     }
   ],
-  "_version": 1749395000000
+  "_version": 1749398000000
 };

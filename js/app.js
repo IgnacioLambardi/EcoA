@@ -370,10 +370,11 @@ function renderStandings() {
     });
 
     const statusLabel = {
-      played:    null,          // se muestra el resultado numérico
+      played:    null,
       no_show:   'W.O.',
       suspended: '⛔ Susp.',
       postponed: '📅 Pospuesto',
+      libre:     '🗓️ Libre',
       pending:   'Pendiente',
     };
 
@@ -382,8 +383,16 @@ function renderStandings() {
       html += `<div class="results-fecha-header">Fecha ${j || '?'}</div>`;
       byJ[j].forEach(m => {
         const st = m.status || (m.played ? 'played' : 'pending');
-        let scoreHTML;
-        if (st === 'played') {
+        let scoreHTML, rowHTML;
+        if (st === 'libre') {
+          // Fila especial: solo un equipo
+          html += `
+            <div class="result-row result-row-libre">
+              <span class="res-team" style="flex:1;text-align:center">${m.homeTeam}</span>
+              <span class="res-badge res-libre">🗓️ Fecha libre</span>
+            </div>`;
+          return;
+        } else if (st === 'played') {
           scoreHTML = `<span class="res-score">${m.goalsHome} – ${m.goalsAway}</span>`;
         } else if (st === 'no_show') {
           const who = m.noShowTeam === 'home' ? m.homeTeam : m.awayTeam;
