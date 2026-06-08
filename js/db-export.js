@@ -1,6 +1,6 @@
 // Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
-// Última publicación: 7/6/2026, 10:42:03
+// Última publicación: 7/6/2026, 10:46:55
 const EXPORTED_DATA = {
   "players": [
     {
@@ -138,7 +138,12 @@ const EXPORTED_DATA = {
           "goals": 2
         }
       ],
-      "assists": [],
+      "assists": [
+        {
+          "id": "mq4ds2kck5fg",
+          "assists": 1
+        }
+      ],
       "captainId": "mq4d1iexu33e",
       "yellows": [
         "mq4d264oisbp"
@@ -201,7 +206,7 @@ const EXPORTED_DATA = {
     {
       "id": "mq4fcxh5miqg",
       "zona": "zona2",
-      "jornada": null,
+      "jornada": 1,
       "homeTeam": "Filo B",
       "awayTeam": "FUBA",
       "status": "no_show",
