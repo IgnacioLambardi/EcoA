@@ -94,9 +94,16 @@ function renderAdminSection(sec) {
   document.querySelectorAll('[data-admin-section]').forEach(b =>
     b.classList.toggle('active', b.dataset.adminSection === sec)
   );
-  if (sec === 'players')   renderPlayersAdmin(content);
-  else if (sec === 'matches')   renderMatchesAdmin(content);
-  else if (sec === 'standings') renderStandingsAdmin(content);
+  try {
+    if (sec === 'players')        renderPlayersAdmin(content);
+    else if (sec === 'matches')   renderMatchesAdmin(content);
+    else if (sec === 'standings') renderStandingsAdmin(content);
+  } catch(e) {
+    content.innerHTML = `<div style="padding:20px;color:#dc2626;background:#fee2e2;border-radius:8px;margin:20px">
+      <strong>Error al cargar sección "${sec}":</strong><br><code>${e.message}</code>
+    </div>`;
+    console.error('renderAdminSection error:', e);
+  }
 }
 
 // ---- Escape para atributos HTML ----
