@@ -1,6 +1,6 @@
 // Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
-// Última publicación: 28/6/2026, 11:52:22
+// Última publicación: 29/6/2026, 12:09:09
 const EXPORTED_DATA = {
   "players": [
     {
@@ -373,7 +373,31 @@ const EXPORTED_DATA = {
       "played": false,
       "goalsHome": 0,
       "goalsAway": 0
+    },
+    {
+      "id": "mqyn1f3t2ci3",
+      "zona": "zona2",
+      "jornada": 2,
+      "homeTeam": "Farmacia",
+      "awayTeam": "FADU B",
+      "status": "played",
+      "played": true,
+      "goalsHome": 5,
+      "goalsAway": 2,
+      "noShowTeam": null
+    },
+    {
+      "id": "mqyn25rka8sv",
+      "zona": "zona1",
+      "jornada": 2,
+      "homeTeam": "FADU A",
+      "awayTeam": "Exactas B",
+      "status": "played",
+      "played": true,
+      "goalsHome": 3,
+      "goalsAway": 1,
+      "noShowTeam": null
     }
   ],
-  "_version": 1782701542516
+  "_version": 1782702549513
 };
