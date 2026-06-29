@@ -1,6 +1,6 @@
 // Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
-// Última publicación: 8/6/2026, 07:42:01
+// Última publicación: 28/6/2026, 11:52:22
 const EXPORTED_DATA = {
   "players": [
     {
@@ -98,6 +98,24 @@ const EXPORTED_DATA = {
       "name": "Mateo 🇫🇷",
       "number": 18,
       "position": "Delantero"
+    },
+    {
+      "id": "mqym710dtkuv",
+      "name": "Tomas \"Colo\" Zalazar",
+      "number": 20,
+      "position": "Defensor"
+    },
+    {
+      "id": "mqym81s4pa1q",
+      "name": "Juan \"Tigre\" Fourmentel",
+      "number": 21,
+      "position": "Mediocampista"
+    },
+    {
+      "id": "mqym8hnw15dz",
+      "name": "Tiago Prego",
+      "number": 22,
+      "position": "Mediocampista"
     }
   ],
   "matches": [
@@ -195,6 +213,96 @@ const EXPORTED_DATA = {
           "outId": "mq4d67nkomki"
         }
       ]
+    },
+    {
+      "id": "mqymg3hihljf",
+      "opponent": "Filo B",
+      "date": "2026-06-28",
+      "isHome": true,
+      "jornada": 2,
+      "played": true,
+      "goalsFor": 2,
+      "goalsAgainst": 1,
+      "convocados": [
+        "mq4d1iexu33e",
+        "mq4d264oisbp",
+        "mq4d2fx4a5md",
+        "mq4d2lo8829y",
+        "mq4d35dkhngo",
+        "mq4d56i7oc9d",
+        "mq4d5ipkpl4w",
+        "mq4d5x9r99kf",
+        "mq4d6kd3od6y",
+        "mq4d6rts3fur",
+        "mq4dr2kmn15r",
+        "mq4dsddw4i6m",
+        "mq4dtgf0ri8h",
+        "mqym710dtkuv",
+        "mqym81s4pa1q",
+        "mqym8hnw15dz"
+      ],
+      "scorers": [
+        {
+          "id": "mq4d6kd3od6y",
+          "goals": 2
+        }
+      ],
+      "assists": [
+        {
+          "id": "mq4d35dkhngo",
+          "assists": 1
+        },
+        {
+          "id": "mqym710dtkuv",
+          "assists": 1
+        }
+      ],
+      "captainId": "mq4d1iexu33e",
+      "yellows": [
+        "mq4d6rts3fur"
+      ],
+      "reds": [],
+      "formation": "4-4-2",
+      "lineup": [
+        "mq4d1iexu33e",
+        "mqym710dtkuv",
+        "mq4d2fx4a5md",
+        "mq4d264oisbp",
+        "mq4d2lo8829y",
+        "mq4d5ipkpl4w",
+        "mq4d56i7oc9d",
+        "mq4d5x9r99kf",
+        "mq4dsddw4i6m",
+        "mq4d6kd3od6y",
+        "mq4dtgf0ri8h"
+      ],
+      "subs": [
+        {
+          "minute": 40,
+          "inId": "mq4d35dkhngo",
+          "outId": "mq4d2fx4a5md"
+        },
+        {
+          "minute": 40,
+          "inId": "mqym8hnw15dz",
+          "outId": "mq4dtgf0ri8h"
+        },
+        {
+          "minute": 40,
+          "inId": "mq4d6rts3fur",
+          "outId": "mq4d5ipkpl4w"
+        },
+        {
+          "minute": 55,
+          "inId": "mqym81s4pa1q",
+          "outId": "mq4dsddw4i6m"
+        },
+        {
+          "minute": 63,
+          "inId": "mq4dr2kmn15r",
+          "outId": "mq4d6kd3od6y"
+        }
+      ]
     }
   ],
   "zoneMatches": [
@@ -267,5 +375,5 @@ const EXPORTED_DATA = {
       "goalsAway": 0
     }
   ],
-  "_version": 1780958521044
+  "_version": 1782701542516
 };
