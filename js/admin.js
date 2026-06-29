@@ -691,7 +691,7 @@ function renderStandingsPanel(zona) {
             <span style="flex:1;min-width:160px;font-size:14px">
               ${teamLabel}
             </span>
-            <span style="min-width:70px;text-align:center">${score}</span>
+            <span style="min-width:70px;text-align:center">${statusBadge}</span>
             <div style="display:flex;gap:6px;flex-shrink:0">
               <button class="btn-sm btn-edit" onclick="editZMRow('${m.id}')">Editar</button>
               <button class="btn-sm btn-del"  onclick="deleteZMRow('${m.id}')">Eliminar</button>
