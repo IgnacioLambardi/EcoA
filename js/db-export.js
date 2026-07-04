@@ -433,7 +433,18 @@ const EXPORTED_DATA = {
       "goalsHome": 2,
       "goalsAway": 1,
       "noShowTeam": null
+    },
+    {
+      "id": "mqzona2f2fuba",
+      "zona": "zona2",
+      "jornada": 2,
+      "homeTeam": "FUBA",
+      "awayTeam": "",
+      "status": "libre",
+      "played": false,
+      "goalsHome": 0,
+      "goalsAway": 0
     }
   ],
-  "_version": 1782760000000
+  "_version": 1782761000000
 };
