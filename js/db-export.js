@@ -397,7 +397,43 @@ const EXPORTED_DATA = {
       "goalsHome": 3,
       "goalsAway": 1,
       "noShowTeam": null
+    },
+    {
+      "id": "mqzona1f2ing",
+      "zona": "zona1",
+      "jornada": 2,
+      "homeTeam": "Ingeniería",
+      "awayTeam": "Veterinarias",
+      "status": "played",
+      "played": true,
+      "goalsHome": 3,
+      "goalsAway": 0,
+      "noShowTeam": null
+    },
+    {
+      "id": "mqzona1f2agr",
+      "zona": "zona1",
+      "jornada": 2,
+      "homeTeam": "Agronomía",
+      "awayTeam": "Derecho B",
+      "status": "played",
+      "played": true,
+      "goalsHome": 9,
+      "goalsAway": 1,
+      "noShowTeam": null
+    },
+    {
+      "id": "mqzona2f2eco",
+      "zona": "zona2",
+      "jornada": 2,
+      "homeTeam": "Económicas A",
+      "awayTeam": "Filo B",
+      "status": "played",
+      "played": true,
+      "goalsHome": 2,
+      "goalsAway": 1,
+      "noShowTeam": null
     }
   ],
-  "_version": 1782702549513
+  "_version": 1782760000000
 };
