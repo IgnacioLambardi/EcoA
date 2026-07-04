@@ -5,8 +5,8 @@
 const DB_KEY = 'ecoa_portal_v1';
 
 const ZONE_TEAMS = {
-  zona1: ['Exactas B', 'FADU A', 'Ingeniería', 'Agronomía', 'Veterinarias'],
-  zona2: ['Económicas A', 'Filo B', 'FADU B', 'FUBA', 'Farmacia'],
+  zona1: ['Exactas B', 'FADU A', 'Ingeniería', 'Agronomía', 'Veterinarias', 'Derecho B'],
+  zona2: ['Económicas A', 'Filo B', 'FADU B', 'FUBA', 'Farmacia', 'Ingeniería B'],
 };
 
 const DEFAULT_DATA = {
