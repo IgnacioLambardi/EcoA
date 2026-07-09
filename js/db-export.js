@@ -1,11 +1,11 @@
 // Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
-// Última publicación: 9/7/2026, 00:00:00
+// Última publicación: 9/7/2026, 01:13:24
 const EXPORTED_DATA = {
   "players": [
     {
       "id": "mq4d1iexu33e",
-      "name": "Iñigo Sagastusame",
+      "name": "Iñigo Sagastume",
       "number": 1,
       "position": "Arquero"
     },
@@ -115,6 +115,30 @@ const EXPORTED_DATA = {
       "id": "mqym8hnw15dz",
       "name": "Tiago Prego",
       "number": 22,
+      "position": "Mediocampista"
+    },
+    {
+      "id": "mrdp36kpxnsp",
+      "name": "Lautaro Souto",
+      "number": 23,
+      "position": "Delantero"
+    },
+    {
+      "id": "mrdp3x74wzrp",
+      "name": "Alejo Arlettaz",
+      "number": 24,
+      "position": "Defensor"
+    },
+    {
+      "id": "mrdp4i3ka048",
+      "name": "Brian Medina",
+      "number": 25,
+      "position": "Delantero"
+    },
+    {
+      "id": "mrdp54uoatc4",
+      "name": "Tiziano Bagattin",
+      "number": 26,
       "position": "Mediocampista"
     }
   ],
@@ -313,15 +337,109 @@ const EXPORTED_DATA = {
       "played": true,
       "goalsFor": 8,
       "goalsAgainst": 2,
-      "convocados": [],
-      "scorers": [],
-      "assists": [],
-      "captainId": null,
+      "convocados": [
+        "mq4d1iexu33e",
+        "mq4d264oisbp",
+        "mq4d2lo8829y",
+        "mq4d35dkhngo",
+        "mq4d56i7oc9d",
+        "mq4d5x9r99kf",
+        "mq4d67nkomki",
+        "mq4ds2kck5fg",
+        "mqym710dtkuv",
+        "mqym81s4pa1q",
+        "mrdp36kpxnsp",
+        "mrdp3x74wzrp",
+        "mrdp4i3ka048",
+        "mrdp54uoatc4"
+      ],
+      "scorers": [
+        {
+          "id": "mq4d264oisbp",
+          "goals": 1
+        },
+        {
+          "id": "mq4d35dkhngo",
+          "goals": 1
+        },
+        {
+          "id": "mq4d5x9r99kf",
+          "goals": 1
+        },
+        {
+          "id": "mq4d67nkomki",
+          "goals": 1
+        },
+        {
+          "id": "mq4ds2kck5fg",
+          "goals": 1
+        },
+        {
+          "id": "mqym81s4pa1q",
+          "goals": 1
+        },
+        {
+          "id": "mrdp36kpxnsp",
+          "goals": 2
+        }
+      ],
+      "assists": [
+        {
+          "id": "mq4d2lo8829y",
+          "assists": 2
+        },
+        {
+          "id": "mq4d35dkhngo",
+          "assists": 1
+        },
+        {
+          "id": "mqym81s4pa1q",
+          "assists": 2
+        },
+        {
+          "id": "mrdp36kpxnsp",
+          "assists": 1
+        }
+      ],
+      "captainId": "mq4d1iexu33e",
       "yellows": [],
       "reds": [],
-      "formation": "",
-      "lineup": [],
-      "subs": []
+      "formation": "4-4-2",
+      "lineup": [
+        "mq4d1iexu33e",
+        "mq4d2lo8829y",
+        "mrdp3x74wzrp",
+        "mq4d264oisbp",
+        "mq4d35dkhngo",
+        "mqym81s4pa1q",
+        "mq4d56i7oc9d",
+        "mq4ds2kck5fg",
+        "mq4d5x9r99kf",
+        "mrdp4i3ka048",
+        "mq4d67nkomki"
+      ],
+      "subs": [
+        {
+          "minute": 32,
+          "inId": "mrdp36kpxnsp",
+          "outId": "mrdp4i3ka048"
+        },
+        {
+          "minute": 40,
+          "inId": "mqym710dtkuv",
+          "outId": "mq4d5x9r99kf"
+        },
+        {
+          "minute": 60,
+          "inId": "mrdp54uoatc4",
+          "outId": "mq4d35dkhngo"
+        },
+        {
+          "minute": 70,
+          "inId": "mq4d5x9r99kf",
+          "outId": "mq4d67nkomki"
+        }
+      ]
     }
   ],
   "zoneMatches": [
@@ -536,5 +654,5 @@ const EXPORTED_DATA = {
       "noShowTeam": null
     }
   ],
-  "_version": 1783700000000
+  "_version": 1783800000000
 };
