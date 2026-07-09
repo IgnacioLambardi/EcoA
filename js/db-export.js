@@ -446,5 +446,77 @@ const EXPORTED_DATA = {
       "goalsAway": 0
     }
   ],
-  "_version": 1782761000000
+    {
+      "id": "mqf3z2farmfuba",
+      "zona": "zona2",
+      "jornada": 3,
+      "homeTeam": "Farmacia",
+      "awayTeam": "FUBA",
+      "status": "played",
+      "played": true,
+      "goalsHome": 5,
+      "goalsAway": 2,
+      "noShowTeam": null
+    },
+    {
+      "id": "mqf3z2ecofadub",
+      "zona": "zona2",
+      "jornada": 3,
+      "homeTeam": "Económicas A",
+      "awayTeam": "FADU B",
+      "status": "played",
+      "played": true,
+      "goalsHome": 8,
+      "goalsAway": 2,
+      "noShowTeam": null
+    },
+    {
+      "id": "mqf3z2filobre",
+      "zona": "zona2",
+      "jornada": 3,
+      "homeTeam": "Filo B",
+      "awayTeam": "",
+      "status": "libre",
+      "played": false,
+      "goalsHome": 0,
+      "goalsAway": 0
+    },
+    {
+      "id": "mqf3z1agrovete",
+      "zona": "zona1",
+      "jornada": 3,
+      "homeTeam": "Agronomía",
+      "awayTeam": "Veterinarias",
+      "status": "played",
+      "played": true,
+      "goalsHome": 0,
+      "goalsAway": 2,
+      "noShowTeam": null
+    },
+    {
+      "id": "mqf3z1fadudere",
+      "zona": "zona1",
+      "jornada": 3,
+      "homeTeam": "FADU A",
+      "awayTeam": "Derecho B",
+      "status": "played",
+      "played": true,
+      "goalsHome": 3,
+      "goalsAway": 0,
+      "noShowTeam": null
+    },
+    {
+      "id": "mqf3z1exactasing",
+      "zona": "zona1",
+      "jornada": 3,
+      "homeTeam": "Exactas B",
+      "awayTeam": "Ingeniería",
+      "status": "played",
+      "played": true,
+      "goalsHome": 1,
+      "goalsAway": 1,
+      "noShowTeam": null
+    }
+  ],
+  "_version": 1782820000000
 };
