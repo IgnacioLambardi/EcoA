@@ -1,6 +1,6 @@
 // Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
-// Última publicación: 29/6/2026, 12:09:09
+// Última publicación: 9/7/2026, 00:00:00
 const EXPORTED_DATA = {
   "players": [
     {
@@ -303,6 +303,25 @@ const EXPORTED_DATA = {
           "outId": "mq4d6kd3od6y"
         }
       ]
+    },
+    {
+      "id": "mqymf3ecofadub",
+      "opponent": "FADU B",
+      "date": "2026-07-05",
+      "isHome": true,
+      "jornada": 3,
+      "played": true,
+      "goalsFor": 8,
+      "goalsAgainst": 2,
+      "convocados": [],
+      "scorers": [],
+      "assists": [],
+      "captainId": null,
+      "yellows": [],
+      "reds": [],
+      "formation": "",
+      "lineup": [],
+      "subs": []
     }
   ],
   "zoneMatches": [
@@ -444,8 +463,7 @@ const EXPORTED_DATA = {
       "played": false,
       "goalsHome": 0,
       "goalsAway": 0
-    }
-  ],
+    },
     {
       "id": "mqf3z2farmfuba",
       "zona": "zona2",
@@ -518,5 +536,5 @@ const EXPORTED_DATA = {
       "noShowTeam": null
     }
   ],
-  "_version": 1782820000000
+  "_version": 1752019200000
 };
