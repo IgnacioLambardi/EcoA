@@ -1,6 +1,6 @@
 // Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
-// Última publicación: 9/7/2026, 01:13:24
+// Última publicación: 10/7/2026, 06:43:36
 const EXPORTED_DATA = {
   "players": [
     {
@@ -435,9 +435,14 @@ const EXPORTED_DATA = {
           "outId": "mq4d35dkhngo"
         },
         {
-          "minute": 70,
+          "minute": 65,
           "inId": "mq4d5x9r99kf",
           "outId": "mq4d67nkomki"
+        },
+        {
+          "minute": 70,
+          "inId": "mrdp4i3ka048",
+          "outId": "mq4d56i7oc9d"
         }
       ]
     }
@@ -654,5 +659,5 @@ const EXPORTED_DATA = {
       "noShowTeam": null
     }
   ],
-  "_version": 1783800000000
+  "_version": 1783900000000
 };
