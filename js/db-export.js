@@ -1,6 +1,6 @@
 // Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
-// Última publicación: 10/7/2026, 06:43:36
+// Última publicación: 26/7/2026, 02:08:35
 const EXPORTED_DATA = {
   "players": [
     {
@@ -11,7 +11,7 @@ const EXPORTED_DATA = {
     },
     {
       "id": "mq4d1my0bwbv",
-      "name": "Agustin \"Pitu\" Adorno",
+      "name": "Agustin Adorno",
       "number": 4,
       "position": "Defensor"
     },
@@ -41,7 +41,7 @@ const EXPORTED_DATA = {
     },
     {
       "id": "mq4d56i7oc9d",
-      "name": "Agustín \"Corren\" Ayala",
+      "name": "Agustín Ayala",
       "number": 5,
       "position": "Mediocampista"
     },
@@ -65,7 +65,7 @@ const EXPORTED_DATA = {
     },
     {
       "id": "mq4d6kd3od6y",
-      "name": "Franco \"Flaco\" Angelone",
+      "name": "Franco Angelone",
       "number": 9,
       "position": "Delantero"
     },
@@ -101,13 +101,13 @@ const EXPORTED_DATA = {
     },
     {
       "id": "mqym710dtkuv",
-      "name": "Tomas \"Colo\" Zalazar",
+      "name": "Tomas Zalazar",
       "number": 20,
       "position": "Defensor"
     },
     {
       "id": "mqym81s4pa1q",
-      "name": "Juan \"Tigre\" Fourmentel",
+      "name": "Juan Fourmentel",
       "number": 21,
       "position": "Mediocampista"
     },
@@ -659,5 +659,5 @@ const EXPORTED_DATA = {
       "noShowTeam": null
     }
   ],
-  "_version": 1783900000000
+  "_version": 1785042515241
 };
