@@ -140,6 +140,18 @@ const EXPORTED_DATA = {
       "name": "Tiziano Bagattin",
       "number": 26,
       "position": "Mediocampista"
+    },
+    {
+      "id": "mt7hwgz5w5yr",
+      "name": "Jeremias \"Kiwi\" Blaiotta",
+      "number": 28,
+      "position": "Mediocampista"
+    },
+    {
+      "id": "mt7hwqhlmoz3",
+      "name": "Joaquin Almada",
+      "number": 27,
+      "position": "Arquero"
     }
   ],
   "matches": [
@@ -455,15 +467,46 @@ const EXPORTED_DATA = {
       "played": true,
       "goalsFor": 0,
       "goalsAgainst": 0,
-      "convocados": [],
+      "convocados": [
+        "mt7hwgz5w5yr",
+        "mt7hwqhlmoz3"
+      ],
       "scorers": [],
       "assists": [],
       "captainId": null,
       "yellows": [],
       "reds": [],
-      "formation": "",
-      "lineup": [],
-      "subs": []
+      "formation": "4-4-2",
+      "lineup": [
+        "mq4d1iexu33e",
+        "mq4d5ipkpl4w",
+        "mqym8hnw15dz",
+        "mt7hwgz5w5yr",
+        "mq4d35dkhngo",
+        "mq4d67nkomki",
+        "mq4ds2kck5fg",
+        "mq4d56i7oc9d",
+        "mq4d67nkomki",
+        "mq4d6kd3od6y",
+        "mrdp36kpxnsp"
+      ],
+      "subs": [
+        {
+          "minute": 20,
+          "inId": "mq4dr2kmn15r",
+          "outId": "mq4d67nkomki"
+        },
+        {
+          "minute": 40,
+          "inId": "mq4d67nkomki",
+          "outId": "mt7hwgz5w5yr"
+        },
+        {
+          "minute": 75,
+          "inId": "mt7hwqhlmoz3",
+          "outId": "mq4d67nkomki"
+        }
+      ]
     }
   ],
   "zoneMatches": [
@@ -749,5 +792,5 @@ const EXPORTED_DATA = {
       "noShowTeam": "home"
     }
   ],
-  "_version": 1786100000000
+  "_version": 1787700000000
 };
