@@ -1,6 +1,6 @@
 // Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
-// Última publicación: 26/7/2026, 02:08:35
+// Última publicación: 24/8/2026, 02:30:21
 const EXPORTED_DATA = {
   "players": [
     {
@@ -486,7 +486,7 @@ const EXPORTED_DATA = {
         "mq4d67nkomki",
         "mq4ds2kck5fg",
         "mq4d56i7oc9d",
-        "mq4d67nkomki",
+        "mq4dsddw4i6m",
         "mq4d6kd3od6y",
         "mrdp36kpxnsp"
       ],
@@ -792,5 +792,5 @@ const EXPORTED_DATA = {
       "noShowTeam": "home"
     }
   ],
-  "_version": 1787700000000
+  "_version": 1787800000000
 };
