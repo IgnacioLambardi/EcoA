@@ -445,6 +445,25 @@ const EXPORTED_DATA = {
           "outId": "mq4d56i7oc9d"
         }
       ]
+    },
+    {
+      "id": "mqf4ecofuba",
+      "opponent": "FUBA",
+      "date": "2026-08-09",
+      "isHome": true,
+      "jornada": 4,
+      "played": true,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "convocados": [],
+      "scorers": [],
+      "assists": [],
+      "captainId": null,
+      "yellows": [],
+      "reds": [],
+      "formation": "",
+      "lineup": [],
+      "subs": []
     }
   ],
   "zoneMatches": [
@@ -657,7 +676,78 @@ const EXPORTED_DATA = {
       "goalsHome": 1,
       "goalsAway": 1,
       "noShowTeam": null
+    },
+    {
+      "id": "mqf4z2ecofuba",
+      "zona": "zona2",
+      "jornada": 4,
+      "homeTeam": "Económicas A",
+      "awayTeam": "FUBA",
+      "status": "played",
+      "played": true,
+      "goalsHome": 0,
+      "goalsAway": 0,
+      "noShowTeam": null
+    },
+    {
+      "id": "mqf4z2filofadub",
+      "zona": "zona2",
+      "jornada": 4,
+      "homeTeam": "Filo B",
+      "awayTeam": "FADU B",
+      "status": "no_show",
+      "played": false,
+      "goalsHome": 0,
+      "goalsAway": 0,
+      "noShowTeam": "away"
+    },
+    {
+      "id": "mqf4z2farmlibre",
+      "zona": "zona2",
+      "jornada": 4,
+      "homeTeam": "Farmacia",
+      "awayTeam": "",
+      "status": "libre",
+      "played": false,
+      "goalsHome": 0,
+      "goalsAway": 0
+    },
+    {
+      "id": "mqf4z1exactasagro",
+      "zona": "zona1",
+      "jornada": 4,
+      "homeTeam": "Exactas B",
+      "awayTeam": "Agronomía",
+      "status": "no_show",
+      "played": false,
+      "goalsHome": 0,
+      "goalsAway": 0,
+      "noShowTeam": "away"
+    },
+    {
+      "id": "mqf4z1vetedere",
+      "zona": "zona1",
+      "jornada": 4,
+      "homeTeam": "Veterinarias",
+      "awayTeam": "Derecho B",
+      "status": "no_show",
+      "played": false,
+      "goalsHome": 0,
+      "goalsAway": 0,
+      "noShowTeam": "home"
+    },
+    {
+      "id": "mqf4z1faduaing",
+      "zona": "zona1",
+      "jornada": 4,
+      "homeTeam": "FADU A",
+      "awayTeam": "Ingeniería",
+      "status": "no_show",
+      "played": false,
+      "goalsHome": 0,
+      "goalsAway": 0,
+      "noShowTeam": "home"
     }
   ],
-  "_version": 1785042515241
+  "_version": 1786000000000
 };
