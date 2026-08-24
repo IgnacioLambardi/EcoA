@@ -483,11 +483,11 @@ const EXPORTED_DATA = {
       "jornada": 1,
       "homeTeam": "Filo B",
       "awayTeam": "FUBA",
-      "status": "no_show",
-      "played": false,
+      "status": "played",
+      "played": true,
       "goalsHome": 0,
-      "goalsAway": 0,
-      "noShowTeam": "home"
+      "goalsAway": 2,
+      "noShowTeam": null
     },
     {
       "id": "mq5zona1fecha1a",
@@ -495,11 +495,11 @@ const EXPORTED_DATA = {
       "jornada": 1,
       "homeTeam": "Exactas B",
       "awayTeam": "Veterinarias",
-      "status": "no_show",
-      "played": false,
-      "goalsHome": 0,
-      "goalsAway": 0,
-      "noShowTeam": "away"
+      "status": "played",
+      "played": true,
+      "goalsHome": 2,
+      "goalsAway": 3,
+      "noShowTeam": null
     },
     {
       "id": "mq5zona1fecha1b",
@@ -507,11 +507,11 @@ const EXPORTED_DATA = {
       "jornada": 1,
       "homeTeam": "FADU A",
       "awayTeam": "Agronomía",
-      "status": "no_show",
-      "played": false,
-      "goalsHome": 0,
-      "goalsAway": 0,
-      "noShowTeam": "home"
+      "status": "played",
+      "played": true,
+      "goalsHome": 7,
+      "goalsAway": 1,
+      "noShowTeam": null
     },
     {
       "id": "mq5zona1fecha1c",
@@ -749,5 +749,5 @@ const EXPORTED_DATA = {
       "noShowTeam": "home"
     }
   ],
-  "_version": 1786000000000
+  "_version": 1786100000000
 };
