@@ -64,8 +64,10 @@ function renderHome() {
   const l5El = document.getElementById('last5');
   l5El.innerHTML = last5.map(m => {
     const res = m.goalsFor > m.goalsAgainst ? 'G' : m.goalsFor === m.goalsAgainst ? 'E' : 'P';
-    const cls = res === 'G' ? 'badge-w' : res === 'E' ? 'badge-d' : 'badge-l';
-    return `<span class="match-badge ${cls}" style="padding:5px 10px;border-radius:6px;font-size:13px;">${res} ${m.goalsFor}-${m.goalsAgainst} vs ${m.opponent}</span>`;
+    const isChamp = m.id === 'mqf5ecoingeniera';
+    const cls = isChamp ? 'badge-champ' : (res === 'G' ? 'badge-w' : res === 'E' ? 'badge-d' : 'badge-l');
+    const label = isChamp ? `🏆 ${res} ${m.goalsFor}-${m.goalsAgainst} vs ${m.opponent}` : `${res} ${m.goalsFor}-${m.goalsAgainst} vs ${m.opponent}`;
+    return `<span class="match-badge ${cls}" style="padding:5px 10px;border-radius:6px;font-size:13px;cursor:pointer" onclick="openMatchModal('${m.id}')">${label}</span>`;
   }).join('') || '<span style="color:var(--muted);font-size:14px">Sin partidos jugados aún.</span>';
 }
 

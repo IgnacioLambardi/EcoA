@@ -355,6 +355,7 @@ tbody td {
 .badge-w    { background: #d1fae5; color: #065f46; }
 .badge-d    { background: #fef3c7; color: #92400e; }
 .badge-l    { background: #fee2e2; color: #991b1b; }
+.badge-champ { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; font-weight: 700; box-shadow: 0 0 8px rgba(245,158,11,.5); }
 
 /* ---- CONVOCADOS MODAL ---- */
 .modal-overlay {
