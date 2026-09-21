@@ -1,6 +1,6 @@
 // Este archivo es generado automáticamente desde el Panel de Administración.
 // No lo edites a mano. Usá el botón "Publicar" del admin para actualizarlo.
-// Última publicación: 24/8/2026, 02:30:21
+// Última publicación: 20/9/2026, 00:00:00
 const EXPORTED_DATA = {
   "players": [
     {
@@ -152,6 +152,18 @@ const EXPORTED_DATA = {
       "name": "Joaquin Almada",
       "number": 27,
       "position": "Arquero"
+    },
+    {
+      "id": "mt9f1sardilaut",
+      "name": "Lautaro Sardi",
+      "number": 29,
+      "position": "Delantero"
+    },
+    {
+      "id": "mt9f1nacinofeli",
+      "name": "Felipe Nacinovich",
+      "number": 30,
+      "position": "Delantero"
     }
   ],
   "matches": [
@@ -507,6 +519,102 @@ const EXPORTED_DATA = {
           "outId": "mq4d67nkomki"
         }
       ]
+    },
+    {
+      "id": "mqf5ecoingeniera",
+      "opponent": "Ingeniería",
+      "date": "2026-09-20",
+      "isHome": true,
+      "jornada": 5,
+      "played": true,
+      "goalsFor": 2,
+      "goalsAgainst": 0,
+      "convocados": [
+        "mq4d1iexu33e",
+        "mq4d2lo8829y",
+        "mq4d264oisbp",
+        "mt7hwgz5w5yr",
+        "mq4d35dkhngo",
+        "mq4d5ipkpl4w",
+        "mq4d56i7oc9d",
+        "mq4ds2kck5fg",
+        "mq4d5x9r99kf",
+        "mt9f1sardilaut",
+        "mt9f1nacinofeli",
+        "mq4d67nkomki",
+        "mq4dr2kmn15r",
+        "mrdp36kpxnsp",
+        "mqym81s4pa1q",
+        "mqym710dtkuv"
+      ],
+      "scorers": [
+        {
+          "id": "mt9f1nacinofeli",
+          "goals": 1
+        },
+        {
+          "id": "mq4d5x9r99kf",
+          "goals": 1
+        }
+      ],
+      "assists": [
+        {
+          "id": "mq4ds2kck5fg",
+          "assists": 1
+        },
+        {
+          "id": "mq4d67nkomki",
+          "assists": 1
+        }
+      ],
+      "captainId": "mq4d1iexu33e",
+      "yellows": [
+        "mrdp36kpxnsp",
+        "mq4d56i7oc9d",
+        "mq4ds2kck5fg"
+      ],
+      "reds": [],
+      "formation": "4-4-2",
+      "lineup": [
+        "mq4d1iexu33e",
+        "mq4d2lo8829y",
+        "mq4d264oisbp",
+        "mt7hwgz5w5yr",
+        "mq4d35dkhngo",
+        "mq4d5ipkpl4w",
+        "mq4d56i7oc9d",
+        "mq4ds2kck5fg",
+        "mq4d5x9r99kf",
+        "mt9f1sardilaut",
+        "mt9f1nacinofeli"
+      ],
+      "subs": [
+        {
+          "minute": 45,
+          "inId": "mq4d67nkomki",
+          "outId": "mt9f1sardilaut"
+        },
+        {
+          "minute": 55,
+          "inId": "mq4dr2kmn15r",
+          "outId": "mq4ds2kck5fg"
+        },
+        {
+          "minute": 60,
+          "inId": "mrdp36kpxnsp",
+          "outId": "mt9f1nacinofeli"
+        },
+        {
+          "minute": 65,
+          "inId": "mqym81s4pa1q",
+          "outId": "mq4d5ipkpl4w"
+        },
+        {
+          "minute": 75,
+          "inId": "mqym710dtkuv",
+          "outId": "mq4d35dkhngo"
+        }
+      ]
     }
   ],
   "zoneMatches": [
@@ -790,7 +898,7 @@ const EXPORTED_DATA = {
       "goalsHome": 0,
       "goalsAway": 0,
       "noShowTeam": "home"
-    }
+    },
   ],
-  "_version": 1787800000000
+  "_version": 1790000000000
 };
